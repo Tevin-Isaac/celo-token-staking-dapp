@@ -1,0 +1,37 @@
+{
+    "name": "dappstore-composer",
+    "version": "1.0.0",
+    "description": "Custom Celo Composer project.",
+    "private": true,
+    "author": "Celo",
+    "license": "MIT",
+    "scripts": {
+        "hardhat:test": "yarn workspace @dappstore-composer/hardhat test",
+        "hardhat:test-local": "yarn workspace @dappstore-composer/hardhat test-local",
+        "hardhat:accounts": "yarn workspace @dappstore-composer/hardhat accounts",
+        "hardhat:devchain": "yarn workspace @dappstore-composer/hardhat devchain",
+        "hardhat:deploy": "yarn workspace @dappstore-composer/hardhat deploy",
+        "hardhat:deploy-reset-watch": "yarn workspace @dappstore-composer/hardhat deploy-reset-watch",
+        "hardhat:watch": "yarn workspace @dappstore-composer/hardhat watch",
+        "hardhat:fork-mainnet": "yarn workspace @dappstore-composer/hardhat fork-mainnet",
+        "react-app:dev": "yarn workspace @dappstore-composer/react-app dev",
+        "react-app:build": "yarn workspace @dappstore-composer/react-app build",
+        "react-app:start": "yarn workspace @dappstore-composer/react-app start",
+        "react-app:lint": "yarn workspace @dappstore-composer/react-app lint"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/celo-org/celo-composer.git"
+    },
+    "bugs": {
+        "url": "https://github.com/celo-org/celo-composer/issues"
+    },
+    "homepage": "https://github.com/celo-org/celo-composer/blob/main/README.md",
+    "workspaces": [
+        "packages/*"
+    ],
+    "keywords": [
+        "celo-composer",
+        "celo"
+    ]
+}

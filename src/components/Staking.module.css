@@ -48,7 +48,7 @@ input:focus {
 }
 
 .stakeButton:hover {
-  background-color: #2675cf;
+  background-color: #000000;
 }
 
 .unstakeButton {
@@ -68,7 +68,7 @@ input:focus {
  }
 
 .unstakeButton:hover {
-  background-color: #1c375f;
+  background-color: #000000;
 }
 
 .unstakeButton:focus {

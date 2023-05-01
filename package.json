@@ -16,6 +16,7 @@
     "chai-as-promised": "7.1.1",
     "chai-bignumber": "3.0.0",
     "dotenv": "^16.0.3",
+    "mdb-react-ui-kit": "^6.0.0",
     "react": "16.8.4",
     "react-dom": "16.8.4",
     "react-scripts": "2.1.3",

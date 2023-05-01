@@ -12,9 +12,9 @@
 .Child {
   background: linear-gradient(
       16deg,
-      rgb(11, 30, 56) 0%,
-      rgb(10, 37, 73) 42%,
-      rgb(8, 45, 95) 100%
+      rgb(255, 5, 26) 0%,
+      rgb(26, 148, 97) 42%,
+      rgb(233, 207, 60) 100%
     ),
     linear-gradient(to right, rgb(37, 62, 99), rgb(11, 31, 70));
   border: 0.3em solid rgba(23, 60, 139, 0.514);

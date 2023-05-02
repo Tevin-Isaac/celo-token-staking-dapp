@@ -7,7 +7,7 @@ contract TestToken {
     string  public symbol = "Tst";
     uint256 public totalSupply = 1000000000000000000000000; // 1 million tokens
     uint8   public decimals = 18;
-
+    address internal cUsdTokenAddress = 0x874069Fa1Eb16D44d622F2e0Ca25eeA172369bC1;
     event Transfer(
         address indexed _from,
         address indexed _to,

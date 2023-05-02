@@ -28,6 +28,7 @@ module.exports = {
   plugins: ['truffle-plugin-verify'],
 
   api_keys: {
-    etherscan: process.env.ETHERSCAN_API_KEY
+    alfajores: process.env.CELO_ALFAJORES_API_KEY // Celo Alfaajores testnet API key
+    
   }
 };

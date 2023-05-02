@@ -1,13 +1,15 @@
 import React, { useState, useEffect } from 'react';
-// import Web3 from 'web3';
+import Web3 from 'web3';
 import classes from './App.module.css';
 import TestToken from '../src/abis/TestToken.json';
 import TokenStaking from '../src/abis/TokenStaking.json';
 import Staking from './components/Staking';
 import AdminTesting from './components/AdminTesting';
 import Navigation from './components/Navigation';
+import { ContractKit } from '@celo/contractkit'
 
 const App = () => {
+  const kit = ContractKit.newKit('https://alfajores-forno.celo-testnet.org');
   const [account, setAccount] = useState('Connecting to Metamask..');
   const [network, setNetwork] = useState({ id: '0', name: 'none' });
   const [testTokenContract, setTestTokenContract] = useState('');
@@ -21,19 +23,7 @@ const App = () => {
   const [userBalance, setUserBalance] = useState('0');
   const [apy, setApy] = useState([0, 0]);
   const [page, setPage] = useState(1);
-  const Celo = require('@celo/contractkit');
-  const Web3 = require('web3');
 
-  const web3 = new Web3('https://alfajores-forno.celo-testnet.org');
-  const kit = Celo.newKitFromWeb3(web3);
-
-async function getBalance() {
-  const accounts = await kit.web3.eth.getAccounts();
-  const celoBalance = await kit.getTotalBalance(accounts[0]);
-  console.log(`CELO balance of ${accounts[0]}: ${celoBalance.toString()}`);
-}
-
-getBalance();
 
   useEffect(() => {
     //connecting to ethereum blockchain

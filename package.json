@@ -23,6 +23,7 @@
     "react-dom": "^18.2.0",
     "react-scripts": "^5.0.1",
     "truffle": "^5.1.39",
+    "vercel": "^29.1.1",
     "web3": "1.2.11"
   },
   "scripts": {

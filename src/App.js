@@ -6,10 +6,8 @@ import TokenStaking from '../src/abis/TokenStaking.json';
 import Staking from './components/Staking';
 import AdminTesting from './components/AdminTesting';
 import Navigation from './components/Navigation';
-import { ContractKit } from '@celo/contractkit'
 
 const App = () => {
-  const kit = ContractKit.newKit('https://alfajores-forno.celo-testnet.org');
   const [account, setAccount] = useState('Connecting to Metamask..');
   const [network, setNetwork] = useState({ id: '0', name: 'none' });
   const [testTokenContract, setTestTokenContract] = useState('');
@@ -23,7 +21,7 @@ const App = () => {
   const [userBalance, setUserBalance] = useState('0');
   const [apy, setApy] = useState([0, 0]);
   const [page, setPage] = useState(1);
-
+  
 
   useEffect(() => {
     //connecting to ethereum blockchain

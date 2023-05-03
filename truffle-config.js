@@ -3,13 +3,18 @@ const mnemonic = 'awesome pear drive venture sign toast tide much hundred floor 
 
 module.exports = {
   networks: {
+    development: {
+      host: '127.0.0.1',
+      port: 7545,
+      network_id: '*', // Match any network id
+    },
     alfajores: {
       provider: function() {
         return new HDWalletProvider(mnemonic,'https://alfajores-forno.celo-testnet.org');
       },
       network_id: 44787, // The network ID for Alfajores testnet
-      gas: 8000000, // Gas limit used for deployments
-      gasPrice: 1000000000, // Gas price used for transactions
+      gas: 4500000, // Gas limit used for deployments
+      gasPrice: 10000000000, // Gas price used for transactions
       skipDryRun: true // Skip the dry run before migrations? (default: false for public nets )
     }
   },

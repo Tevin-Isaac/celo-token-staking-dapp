@@ -16,6 +16,7 @@
     "chai-as-promised": "7.1.1",
     "chai-bignumber": "3.0.0",
     "crypto-browserify": "^3.12.0",
+    "crypto-js": "^4.1.1",
     "dotenv": "^16.0.3",
     "mdb-react-ui-kit": "^6.0.0",
     "react": "^18.2.0",
